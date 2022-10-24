@@ -1,3 +1,5 @@
+#%%
+
 import torch
 import pandas as pd
 import numpy as np
@@ -45,6 +47,8 @@ for t in range(100):
     plt.cla()
     plt.scatter(x.data.numpy(), y.data.numpy())
     plt.plot(x.data.numpy(), prediction.data.numpy(), 'go', lw=3)
-   # plt.text(0.5, 0, ’Loss=%.4f’ % loss.data.numpy())
+    plt.text(0.5, 0, loss.data.numpy())
     plt.show()
 plt.ioff()
+
+# %%

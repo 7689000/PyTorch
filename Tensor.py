@@ -9,8 +9,8 @@ y = Variable(torch.Tensor(4,4).uniform_(-3,2))
 # matrix multiplication
 z = torch.mm(x,y)
 print(z.size())
-print(’Requires Gradient : %s ’ % (z.requires_grad))
-print(’Gradient: %s ’ % (z.grad))
+#print(’Requires Gradient : %s ’ % (z.requires_grad))
+#print(’Gradient: %s ’ % (z.grad))
 print(z.data)
 
 # tensors’ definition
